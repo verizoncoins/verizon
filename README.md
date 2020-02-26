@@ -16,7 +16,7 @@ More information at [Verizon-coin.com](http://Verizon-coin.com)
 <tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Maturity</td><td>20 Confirmations</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
-<tr><td>Masternode Collateral</td><td>2,000 VRZ</td></tr>
+<tr><td>Masternode Collateral</td><td>20,000 VRZ</td></tr>
 <tr><td>Max Coin Supply</td><td>40,000,000 VRZ</td></tr>
 <tr><td>Premine</td><td>5% *</td></tr>
 <tr><td>P2P port</td><td>51415</td></tr>
