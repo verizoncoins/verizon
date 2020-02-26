@@ -1,0 +1,26 @@
+[Unit]
+Description=Verizon's distributed currency daemon
+After=network.target
+
+[Service]
+User=vrz
+Group=vrz
+
+Type=forking
+PIDFile=/var/lib/vrzd/vrzd.pid
+
+ExecStart=/usr/bin/vrzd -daemon -pid=/var/lib/vrzd/vrzd.pid \
+          -conf=/etc/vrz/vrz.conf -datadir=/var/lib/vrzd
+
+ExecStop=-/usr/bin/vrz-cli -conf=/etc/vrz/vrz.conf \
+         -datadir=/var/lib/vrzd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

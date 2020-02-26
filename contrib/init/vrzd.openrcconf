@@ -1,0 +1,26 @@
+# /etc/conf.d/vrzd: config file for /etc/init.d/vrzd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/vrz/vrz.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/vrzd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/vrzd.pid"
+
+# Where to write vrzd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/vrzd"
+
+# User and group to own vrzd process
+#BITCOIND_USER="vrz"
+#BITCOIND_GROUP="vrz"
+
+# Path to vrzd executable
+#BITCOIND_BIN="/usr/bin/vrzd"
+
+# Nice value to run vrzd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Verizon
+Comment=Verizon P2P Cryptocurrency
+Comment[fr]=Verizon, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Verizon, eşten eşe kriptografik sanal para birimi
+Exec=vrz-qt %u
+Terminal=false
+Type=Application
+Icon=vrz128
+MimeType=x-scheme-handler/vrz;
+Categories=Office;Finance;
